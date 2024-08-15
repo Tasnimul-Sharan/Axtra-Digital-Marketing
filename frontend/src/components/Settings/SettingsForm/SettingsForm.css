@@ -1,0 +1,82 @@
+.settings-form {
+  position: fixed;
+  top: 50%;
+  right: 7%;
+  transform: translateX(50%);
+  background: var(--bg-color);
+  border: 1px solid var(--bg-color-highlight);
+  border-radius: 8px 8px 0 0;
+  padding: 16px;
+  z-index: 1000;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.arrow-up {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--bg-color);
+  background: var(--bg-color-highlight);
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.settings-content {
+  margin-top: 20px;
+}
+
+.settings-header h3,
+.settings-toggle h3 {
+  margin: 0 0 8px 0;
+  color: var(--color-text-highlight);
+}
+
+.settings-header select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  background: var(--bg-color);
+  color: var(--color-text);
+  border: 1px solid var(--bg-color-highlight);
+}
+
+.settings-toggle {
+  margin-top: 16px;
+}
+
+.mode-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mode-buttons button {
+  width: 48%;
+  padding: 8px;
+  border-radius: 4px;
+  background: var(--bg-color-highlight);
+  color: var(--color-text);
+  border: none;
+  cursor: pointer;
+}
+
+.mode-buttons button.active {
+  background: var(--color-text-highlight);
+  color: var(--bg-color);
+}
+
+.close-btn {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg-color);
+  border: none;
+  color: var(--color-text-highlight);
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: var(--bg-color-highlight);
+}
