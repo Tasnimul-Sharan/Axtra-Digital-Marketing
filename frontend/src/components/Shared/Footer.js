@@ -56,10 +56,10 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex flex-col text-center md:text-right">
+        <div className="flex flex-col text-right px-16">
           <h2
             ref={textRef}
-            className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 mb-4"
+            className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 mb-4"
           >
             LET'S TALK
           </h2>

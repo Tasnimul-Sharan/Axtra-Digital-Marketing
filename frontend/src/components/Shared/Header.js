@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex items-center justify-between p-4 bg-white shadow-md">
+      <header className="flex items-center justify-between p-8 bg-white shadow-md">
         <div className="flex items-center">
           <Link to="/">
             <img
@@ -71,8 +71,7 @@ const Header = () => {
       >
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center">
-            <img src="path/to/logo.png" alt="Logo" className="h-8 mr-2" />
-            <span className="font-bold text-lg text-white">Axtra</span>
+            <img src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsite-logo-white-2.c8e48a63.png&w=128&q=75" alt="Logo" className="h-8 mr-2" />
           </div>
           <FaTimes
             className="h-6 w-6 text-white cursor-pointer"
