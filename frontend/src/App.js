@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 import AnimatedCursor from "react-animated-cursor";
-import { DarkModeProvider } from './contexts/DarkModeContext';
-import DarkModeToggle from './components/DarkModeToggle';
-import SettingsIcon from './components/Settings/SettingsIcon';
-import SettingsForm from './components/Settings/SettingsForm/SettingsForm';
-import Home from './components/Home/Home';
-// import SettingsIcon from './components/SettingsIcon';
-// import SettingsForm from './components/SettingsForm';
+import { DarkModeProvider } from "./contexts/DarkModeContext";
+import DarkModeToggle from "./components/DarkModeToggle";
+import SettingsIcon from "./components/Settings/SettingsIcon";
+import SettingsForm from "./components/Settings/SettingsForm/SettingsForm";
+import Home from "./components/Home/Home";
+import Header from "./components/Shared/Header";
+import Footer from "./components/Shared/Footer";
+import { Route, Routes } from "react-router-dom";
+import Products from "./components/Products/Products";
 
 function App() {
   const [showSettings, setShowSettings] = useState(false);
@@ -23,24 +25,25 @@ function App() {
           innerSize={8}
           outerSize={35}
           innerScale={1}
-          outerScale={2}
+          outerScale={1.7}
           outerAlpha={0}
-          hasBlendMode={true}
-          innerStyle={{
-            backgroundColor: 'var(--cursor-color)'
-          }}
           outerStyle={{
-            border: '3px solid var(--cursor-color)'
+            border: "3px solid var(--cursor-color)",
+          }}
+          innerStyle={{
+            backgroundColor: "var(--cursor-color)",
           }}
         />
         <div>
-          {/* <DarkModeToggle />
-          <h1>Hello World</h1>
-          <p>This is a sample application with dark mode support.</p> */}
-          <Home/>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+          </Routes>
         </div>
         <SettingsIcon onClick={toggleSettings} />
         {showSettings && <SettingsForm onClose={toggleSettings} />}
+        <Footer />
       </div>
     </DarkModeProvider>
   );

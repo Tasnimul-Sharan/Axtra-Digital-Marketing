@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.horizontal-scroll-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.horizontal-section {
+  min-width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -17,8 +29,6 @@
   }
 }
 
-/* src/styles.css */
-
 :root {
   --bg-color-hsl: 0, 0%, 100%;
   --bg-color: hsl(var(--bg-color-hsl));
@@ -26,7 +36,7 @@
   --bg-color-highlight: hsl(238, 70%, 40%);
   --color-text: hsl(0, 0%, 20%);
   --color-text-highlight: hsl(0, 0%, 0%);
-  --cursor-color: #FF5733;
+  --cursor-color: #ff5733;
 }
 
 .dark-mode {
@@ -36,7 +46,7 @@
   --bg-color-highlight: hsl(238, 70%, 40%);
   --color-text: hsl(0, 0%, 80%);
   --color-text-highlight: hsl(0, 0%, 100%);
-  --cursor-color: #33FF57;
+  --cursor-color: #33ff57;
 }
 
 body {
@@ -44,10 +54,10 @@ body {
   color: var(--color-text);
 }
 
-h1, p {
+h1,
+p {
   color: var(--color-text-highlight);
 }
-
 
 .App-header {
   background-color: #282c34;
