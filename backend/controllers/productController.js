@@ -1,6 +1,5 @@
 const Product = require("../models/Product");
 
-// Create a new product
 exports.createProduct = async (req, res) => {
   try {
     const product = new Product(req.body);
@@ -11,16 +10,6 @@ exports.createProduct = async (req, res) => {
   }
 };
 
-// Get all products
-// exports.getProducts = async (req, res) => {
-//   try {
-//     const products = await Product.find();
-//     res.status(200).json(products);
-//   } catch (err) {
-//     res.status(500).json({ error: err.message });
-//   }
-// };
-
 exports.getProducts = async (req, res) => {
   try {
     const products = await Product.find();
@@ -30,7 +19,6 @@ exports.getProducts = async (req, res) => {
   }
 };
 
-// Get a single product by ID
 exports.getProductById = async (req, res) => {
   try {
     const product = await Product.findById(req.params.id);
