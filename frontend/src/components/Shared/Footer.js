@@ -20,7 +20,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-black text-white">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <div className="flex flex-col text-center md:text-left">
           <h2 className="text-xl font-bold mb-4">Axtra</h2>
@@ -29,28 +29,28 @@ const Footer = () => {
             we actually need how can we avoid them.
           </p>
         </div>
-        <div className="flex flex-col border-collapse space-y-4 w-24">
+        <div className="flex flex-col border border-[#262626] border-collapse w-24">
           <a
             href="#"
-            className="text-white border-1 h-24 flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300"
+            className="text-white border-[#262626] border h-24 flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300"
           >
             Facebook
           </a>
           <a
             href="#"
-            className="text-white border-2 border-black h-24 flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300"
+            className="text-white border-[#262626] border h-24 flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300"
           >
             Twitter
           </a>
           <a
             href="#"
-            className="text-white border-2 border-black h-24 flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300"
+            className="text-white border-[#262626] border h-24 flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300"
           >
             LinkedIn
           </a>
           <a
             href="#"
-            className="text-white border-2 border-black h-24 flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300"
+            className="text-white border-[#262626] border  h-24 flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300"
           >
             Instagram
           </a>
@@ -65,7 +65,7 @@ const Footer = () => {
           </h2>
         </div>
       </div>
-      <div className="mt-8 border-t border-gray-700 pt-4">
+      <div className="border-t border-gray-700 py-8">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400">
             © 2022 – 2025 | Alrights reserved by Wealcoder
