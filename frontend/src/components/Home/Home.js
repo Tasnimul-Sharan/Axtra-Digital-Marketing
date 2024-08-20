@@ -8,6 +8,7 @@ import WhyChooseUsHeader from "./WhyChooseUsHeader";
 import ContactSection from "./ContactSection";
 import HorizontalScroll from "./HorizontalScroll";
 import Testimonial from "./Testimonial";
+import FeaturedWork from "./FeaturedWork";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <ServicesSection />
       <BusinessSection />
       <ContactSection />
+      <FeaturedWork/>
       <Testimonial />
       {/* <HorizontalScroll /> */}
     </div>
