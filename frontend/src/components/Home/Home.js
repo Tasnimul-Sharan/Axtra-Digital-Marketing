@@ -9,6 +9,7 @@ import ContactSection from "./ContactSection";
 import HorizontalScroll from "./HorizontalScroll";
 import Testimonial from "./Testimonial";
 import FeaturedWork from "./FeaturedWork";
+import PricingTable from "./PricingTable";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <ContactSection />
       <FeaturedWork/>
       <Testimonial />
+      <PricingTable />
       {/* <HorizontalScroll /> */}
     </div>
   );

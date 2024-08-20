@@ -7,8 +7,7 @@ const ServicesSection = () => {
         <h2 className="text-3xl text-justify">WHY CHOOSE US</h2>
       </div>
 
-      <div className="flex">
-        {/* Left Section */}
+      <div className="flex my-6">
         <div className="w-1/2 text-justify">
           <h2 className="text-4xl font-extrabold mb-6">
             KEYWORD,RESEARCH, <b />
@@ -19,14 +18,14 @@ const ServicesSection = () => {
             patches to go back to the origins of the user experience: the first
             mention of the user and its importance was born in the...
           </p>
-          <div className="flex my-12 space-x-4">
-            <button className="hover:bg-black border border-black hover:text-white text-black px-4 py-2 rounded-md">
+          <div className="flex my-12">
+            <button className="hover:bg-black border border-black hover:text-white text-black px-4 py-2 rounded-full">
               GOOGLE
             </button>
-            <button className="hover:bg-black border border-black hover:text-white text-black px-4 py-2 rounded-md">
+            <button className="hover:bg-black border border-black hover:text-white text-black px-4 py-2 rounded-full">
               PINTEREST
             </button>
-            <button className="hover:bg-black border border-black hover:text-white text-black px-4 py-2 rounded-md">
+            <button className="hover:bg-black border border-black hover:text-white text-black px-4 py-2 rounded-full">
               INSTAGRAM
             </button>
           </div>
@@ -35,7 +34,7 @@ const ServicesSection = () => {
         {/* Right Section */}
         <div className="w-2/5 flex flex-col space-y-10">
           <div className="flex items-center ml-20">
-            <div className="bg-white p-16 rounded-full border-4 border-[#121212] text-center">
+            <div className="bg-white p-16 rounded-full border-4 border-[#121212]  text-center">
               <div className="text-2xl">70%</div>
             </div>
             <div className="ml-6 text-justify">
@@ -48,7 +47,7 @@ const ServicesSection = () => {
           </div>
 
           <div className="flex items-center">
-            <div className="bg-white p-16 rounded-full border-4 border-[#121212] text-center">
+            <div className="bg-white  p-16 rounded-full border-[#121212] text-center border-4 ">
               <div className="text-2xl">95%</div>
             </div>
             <div className="ml-6 text-justify">
@@ -61,7 +60,7 @@ const ServicesSection = () => {
           </div>
 
           <div className="flex items-center ml-20">
-            <div className="bg-white p-16 font-bold rounded-full border-4 border-[#121212] text-center">
+            <div className="bg-white  p-16 font-bold rounded-full border-[#121212] text-center border-4">
               <div className="text-2xl">60%</div>
             </div>
             <div className="ml-6 text-justify">
