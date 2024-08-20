@@ -13,12 +13,12 @@ const ServicesSection = () => {
             KEYWORD,RESEARCH, <b />
             STRATEGY,SURVEY,& <br /> ANALYTICS
           </h2>
-          <p className="mb-8">
+          <p className="w-72 lg:ml-20 py-8">
             Attention, we take out our round glasses and our sweater with elbow
             patches to go back to the origins of the user experience: the first
             mention of the user and its importance was born in the...
           </p>
-          <div className="flex space-x-4 mb-12">
+          <div className="flex space-x-4 my-12">
             <button className="hover:bg-black hover:text-white text-black px-4 py-2 rounded-full">
               GOOGLE
             </button>
@@ -34,7 +34,7 @@ const ServicesSection = () => {
         {/* Right Section */}
         <div className="w-2/6 flex flex-col space-y-6">
           <div className="flex items-center">
-            <div className="bg-white p-10 rounded-full border border-[#121212]  text-center">
+            <div className="bg-white p-10 rounded-full border-4 border-[#121212]  text-center">
               <div className="text-2xl">70%</div>
             </div>
             <div className="ml-6 text-justify">
@@ -46,8 +46,8 @@ const ServicesSection = () => {
             </div>
           </div>
 
-          <div className="flex items-center">
-            <div className="bg-white p-6 rounded-full border border-[#121212] text-center">
+          <div className="flex items-center mr-16">
+            <div className="bg-white p-10 rounded-full border-[#121212] text-center border-4 ">
               <div className="text-2xl">95%</div>
             </div>
             <div className="ml-6 text-justify">
@@ -60,7 +60,7 @@ const ServicesSection = () => {
           </div>
 
           <div className="flex items-center">
-            <div className="bg-white p-6 rounded-full border border-[#121212] text-center">
+            <div className="bg-white p-10 font-bold rounded-full border-[#121212] text-center border-4">
               <div className="text-2xl">60%</div>
             </div>
             <div className="ml-6 text-justify">

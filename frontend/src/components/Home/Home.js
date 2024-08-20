@@ -7,6 +7,7 @@ import ServicesSection from "./ServicesSection";
 import WhyChooseUsHeader from "./WhyChooseUsHeader";
 import ContactSection from "./ContactSection";
 import HorizontalScroll from "./HorizontalScroll";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <ServicesSection />
       <BusinessSection />
       <ContactSection />
+      <Testimonial />
       {/* <HorizontalScroll /> */}
     </div>
   );
