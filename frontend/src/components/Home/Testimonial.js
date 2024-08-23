@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Testimonial = () => {
   const imagesRef = useRef([]);
@@ -62,8 +63,11 @@ const Testimonial = () => {
 
   return (
     <div className="relative bg-white py-60">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-xl mx-auto text-center">
         <blockquote className="text-xl italic font-semibold text-gray-900">
+          <p className="mb-4 text-8xl font-bold">
+          “
+          </p>
           <p className="mb-4">
             “When we talk about Alts, we do not mean a typical business partner,
             but rather a team that collaborates with us daily, always there for
@@ -78,7 +82,7 @@ const Testimonial = () => {
       </div>
 
       {/* Arrows with hover effects */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-4">
+      {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-4">
         <button
           ref={buttonLeftRef}
           className="bg-gray-200 p-2 rounded-full mx-1"
@@ -91,6 +95,23 @@ const Testimonial = () => {
         >
           {">"}
         </button>
+      </div> */}
+      
+      <div
+        className="absolute top-1/2 left-36 transform -translate-y-1/2 cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300"
+        // onClick={prevSlide}
+      >
+        <div ref={buttonLeftRef} className="rounded-full bg-black border-2 border-white text-white p-2 transition-all duration-300 ease-in-out hover:bg-white hover:text-black">
+          <FaArrowLeft size={25} />
+        </div>
+      </div>
+      <div
+        className="absolute top-1/2 right-36 transform -translate-y-1/2 cursor-pointer opacity-0 group-hover:opacity-100 transition-all duration-300"
+        // onClick={nextSlide}
+      >
+        <div ref={buttonRightRef} className="rounded-full bg-black border-2 border-white text-white p-2 transition-all duration-300 ease-in-out hover:bg-white hover:text-black">
+          <FaArrowRight size={25} />
+        </div>
       </div>
 
       {/* Images with parallax effect */}
