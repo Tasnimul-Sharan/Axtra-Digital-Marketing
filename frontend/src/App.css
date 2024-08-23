@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.horizontal-scroll-container {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-}
-
-.horizontal-section {
-  min-width: 100vw;
-  height: 100vh;
-  flex-shrink: 0;
+.horizontal-scroll-wrapper {
+  position: relative;
+  z-index: 1; /* Ensure it's behind or above other elements based on your needs */
 }
 
 .App {

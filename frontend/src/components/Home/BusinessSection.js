@@ -7,7 +7,7 @@ const BusinessSection = () => {
         {/* <h3 className="text-sm text-justify font-semibold text-gray-600 mb-12">
           WHY CHOOSE US
         </h3> */}
-        <div className="grid grid-cols-2 gap-x-16 gap-y-80 ml-40">
+        <div className="grid grid-cols-2 gap-x-16 gap-y-40 ml-40">
           <div>
             <h1 className="text-8xl font-semibold">25k</h1>
             <p className="text-lg text-gray-500">Projects completed</p>

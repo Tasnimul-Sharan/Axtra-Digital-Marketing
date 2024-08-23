@@ -10,6 +10,7 @@ import Header from "./components/Shared/Header";
 import Footer from "./components/Shared/Footer";
 import { Route, Routes } from "react-router-dom";
 import Products from "./components/Products/Products";
+import ScrollButton from "./components/ScrollButton/ScrollButton";
 
 function App() {
   const [showSettings, setShowSettings] = useState(false);
@@ -36,6 +37,7 @@ function App() {
         />
         <div>
           <Header />
+          <ScrollButton />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
